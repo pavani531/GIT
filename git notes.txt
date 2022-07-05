@@ -1,0 +1,43 @@
+GIT: It is a software and is often used along with remote repositories like GitHub,GitLab fro developing,managing and distributing code
+Git Life Cycle:  
+			git add				git commit			git push
+working directory----------------->staging area--------------------->local repository------------------>Remote repository
+			git reset									git pull	 |
+working directory<-------------------staging area                           local repository    <------------------------|
+
+git commands:
+1)git init: Creates a new empty repo in your current directory.
+
+2)git add . :Adds all python files in the current directory to the staging area.
+
+3)git commit: Records everything in the staging area to your repository. The default text editor will prompt you for a commit message
+3.1) git commit -m "Commit message": Records everything in the staging area to your repository with the commit message "Commit message"
+3.2)git commit --amend:	Modify last commit instead of creating a new one. Useful for fixing small mistakes.
+
+4.git branch --set-upstream-to <origin>:By default, fetch, pull and push will operate on the origin repo
+
+5)git push:	Incorporates changes from local repo into 'origin'. 
+5.1)git push <repo> <branch>:Incorporates changes from local repo into <repo> <branch>
+
+6)git pull:Incorporates changes from 'origin' into local repo. 
+6.1)git pull <repo> <branch>:	Incorporates changes from <repo> <branch> into local repo.
+
+7.git branch:List branches.
+7.1)git branch <branch-name>:Create new branch <branch-name
+
+8.git checkout -b p1:Switch to editing branch p1
+
+9.git clone URL:Copies a remote repository into your current directory.
+
+10)git merge <branch-name>:Merge <branch-name> into current branch.
+
+11)git fetch:Gets status of 'origin'. git fetch does not change your working directory or local repository (see git pull). 
+11.1)git fetch <repo> <branch>:	Get status of <repo> <branch>.
+
+12)git log:Prints commit history of repo.
+12.1)git log <filename>:Prints commit history of <filename>.
+
+13)git reset:Removes all files from staging area. (Opposite of git add)
+13.1)git reset <filename>: Removes <filename> from staging area.
+
+14)git status
